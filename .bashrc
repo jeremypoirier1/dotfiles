@@ -12,6 +12,10 @@ alias ls='ls -a'
 alias ll='ls -la'
 alias c='clear'
 alias grepc='grep --color=auto'
+alias ..='cd ..'
+alias /='cd /'
+alias rm='rm -rf $1'
+
 
 #function
 mkcd(){
@@ -24,6 +28,8 @@ mygrep(){
 	grep -i '$1' '$2'
 }
 
-
-PS1='[\u@\h \w]\$ '
-
+if ($USER == 'jay')
+	PS1='[@\h \w]\$ '
+else
+	PS1='[\u@\h \w]\$ '
+fi
