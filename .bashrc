@@ -5,6 +5,7 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+echo "Bonjour $USER"
 #aliases
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
@@ -27,9 +28,10 @@ mygrep(){
 	grep -i '$1' '$2'
 }
 
-if [$USER == "jay"]
-then	
-	export PS1='[@\h \w]\$ '
-else
-	export PS1='[\u@\h \w]\$ '
-fi
+PS1="[@\h \w]\$"
+#if [$USER == "jay"]
+#then	
+#	export PS1='[@\h \w]\$ '
+#else
+#	export PS1='[\u@\h \w]\$ '
+#fi
