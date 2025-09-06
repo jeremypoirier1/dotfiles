@@ -19,13 +19,13 @@ alias rm='rm -rf $1'
 
 #function
 mkcd(){
-	mkdir '$1' && cd '$1'
+	mkdir $1 && cd $1
 }
 tnvim(){
-	touch '$1' && nvim '$1'
+	touch $1 && nvim $1
 }
 mygrep(){
-	grep -i '$1' '$2'
+	grep -i $1 $2
 }
 
 PS1="[@\h \w]\$"
