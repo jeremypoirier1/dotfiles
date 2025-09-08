@@ -28,6 +28,8 @@ mygrep(){
 	grep -i $1 $2
 }
 
+PATH="~/bin"
+
 PS1="[@\h \w]\$"
 #if [$USER == "jay"]
 #then	
